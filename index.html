@@ -1,0 +1,1228 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ===== SEO PRIMARY ===== -->
+  <title>Star Pizza Auneau — Pizzeria, Tacos, Burgers & Salades | Centre-Val de Loire</title>
+  <meta name="description"
+    content="Star Pizza à Auneau (28) — Pizzas artisanales, Tacos, Burgers, Sandwichs, Salades et Grillades. Livraison et commande sur place. Ouvert 7j/7 de 11h à 23h. Appelez le 01 46 71 75 15.">
+  <meta name="keywords"
+    content="star pizza, pizzeria auneau, pizza centre-val de loire, tacos auneau, burger eure-et-loir, commande pizza, livraison pizza 28, restaurant auneau">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="author" content="Star Pizza Auneau">
+  <meta name="geo.region" content="FR-28">
+  <meta name="geo.placename" content="Auneau, Centre-Val de Loire">
+  <link rel="canonical" href="https://starpizza28.fr" />
+
+  <!-- ===== OPEN GRAPH (Facebook / WhatsApp / LinkedIn) ===== -->
+  <meta property="og:type" content="restaurant">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="Star Pizza Auneau">
+  <meta property="og:title" content="Star Pizza — Pizzeria, Tacos, Burgers & Salades à Auneau">
+  <meta property="og:description"
+    content="Découvrez nos pizzas artisanales, tacos maison, burgers et salades fraîches. Commandez au 02 46 56 95 50 — Ouvert 7j/7 de 11h à 23h à Auneau (28).">
+  <meta property="og:image" content="https://www.starpizza-montrouge.fr/assets/logo_new.jpg">
+  <meta property="og:url" content="https://starpizza28.fr">
+
+  <!-- ===== TWITTER CARD ===== -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Star Pizza — Pizzeria, Tacos, Burgers à Auneau">
+  <meta name="twitter:description"
+    content="Pizzas artisanales, Tacos, Burgers, Salades — commandez au 02 46 56 95 50. Ouvert 7j/7 à Auneau (28).">
+  <meta name="twitter:image" content="https://starpizza28.fr/assets/logo_new.jpg">
+
+  <!-- ===== SCHEMA.ORG JSON-LD (Référencement local Google) ===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Star Pizza Auneau",
+    "image": "https://www.starpizza-montrouge.fr/assets/logo_new.jpg",
+    "url": "https://starpizza28.fr",
+    "telephone": "+33246569550",
+    "email": "[EMAIL_ADDRESS]",
+    "description": "Pizzeria artisanale proposant pizzas, tacos, burgers, sandwichs, salades et grillades en Centre-Val de Loire.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": " 1 Rue du Marché",
+      "addressLocality": "Auneau-Bleury-Saint-Symphorien",
+      "postalCode": "28700",
+      "addressRegion": "Centre-Val de Loire",
+      "addressCountry": "FR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 48.46175358215252,
+      "longitude": 1.77251178463695
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+        "opens": "11:00",
+        "closes": "23:00"
+      }
+    ],
+    "servesCuisine": ["Pizza", "Tacos", "Burger", "Fast Food", "Grillades"],
+    "priceRange": "€€",
+    "hasMap": "https://maps.google.com/?q=Star+Pizza+Auneau",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.5",
+      "reviewCount": "120"
+    },
+    "menu": "https://starpizza28.fr/#pizzas",
+    "acceptsReservations": false  
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ========== LIGHTBOX MODAL ========== -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Aperçu image">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Fermer">&times;</button>
+    <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
+    <div class="lightbox-content">
+      <img src="" alt="" id="lightboxImg" />
+      <p class="lightbox-caption" id="lightboxCaption"></p>
+    </div>
+  </div>
+
+  <!-- ========== NAVBAR ========== -->
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#accueil" class="nav-logo">
+        <img src="assets/logo_new.jpg" alt="Star Pizza" class="logo-img" />
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#accueil" class="nav-link">Accueil</a>
+        <a href="#burgers" class="nav-link">Burgers</a>
+        <a href="#tacos" class="nav-link">Tacos</a>
+        <a href="#pizzas" class="nav-link">Pizzas</a>
+        <a href="#salades" class="nav-link">Salades</a>
+        <a href="#extras" class="nav-link">Extras</a>
+        <a href="#contact" class="nav-link nav-cta">Commander</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="accueil">
+    <div class="hero-bg-img"></div>
+    <div class="hero-bg-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-badge">Centre-Val de Loire</div>
+      <h1 class="hero-title"><span class="gold">S</span>tar Pizza Auneau</h1>
+      <p class="hero-tagline">Pizzeria <span>·</span> Tacos <span>·</span> Grill <span>·</span> Salade</p>
+      <p class="hero-sub">Fait maison, grillé sur place, livré avec passion.</p>
+      <div class="hero-actions">
+        <a href="#pizzas" class="btn btn-primary">Voir le menu</a>
+        <a href="#contact" class="btn btn-outline">Nous appeler</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M12 5v14M5 12l7 7 7-7" />
+      </svg>
+      Défiler
+    </div>
+  </section>
+
+  <!-- ========== BURGERS ========== -->
+  <section class="menu-section" id="burgers">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-title-accent"></div>
+        <h2 class="section-title">Burgers</h2>
+        <p class="section-subtitle">Viande fraîche, pain brioché toasté, sauces maison</p>
+      </div>
+      <div class="product-grid">
+
+        <div class="product-card">
+          <div class="product-img-wrap" data-lightbox="assets/products/gen_burger_cheese.png"
+            data-caption="Cheese Burger">
+            <img src="assets/products/gen_burger_cheese.png" alt="Cheese Burger" loading="lazy" />
+            <div class="zoom-icon">&#x2B59;</div>
+          </div>
+          <div class="product-info">
+            <h3>Cheese</h3>
+            <p class="product-desc">Steak, cheddar, salade, tomates, frites.<br /><small>1 Sauce au choix</small></p>
+            <span class="product-price">6,00 €</span>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img-wrap" data-lightbox="assets/products/gen_burger_double_cheese.png"
+            data-caption="Double Cheese Burger">
+            <img src="assets/products/gen_burger_double_cheese.png" alt="Double Cheese" loading="lazy" />
+            <div class="zoom-icon">&#x2B59;</div>
+          </div>
+          <div class="product-info">
+            <h3>Double Cheese</h3>
+            <p class="product-desc">Double steak, double cheddar, salade, tomates, frites.<br /><small>1 Sauce au
+                choix</small></p>
+            <span class="product-price">6,50 €</span>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img-wrap" data-lightbox="assets/products/gen_burger_filet.png"
+            data-caption="Filet O'Fish">
+            <img src="assets/products/gen_burger_filet.png" alt="Filet O'Fish" loading="lazy" />
+            <div class="zoom-icon">&#x2B59;</div>
+          </div>
+          <div class="product-info">
+            <h3>Filet O'Fish</h3>
+            <p class="product-desc">Poisson pané, cheddar, salade, tomates, frites.<br /><small>1 Sauce au choix</small>
+            </p>
+            <span class="product-price">6,50 €</span>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img-wrap" data-lightbox="assets/products/gen_burger_star.png" data-caption="Star Burger">
+            <img src="assets/products/gen_burger_star.png" alt="Star Burger" loading="lazy" />
+            <div class="zoom-icon">&#x2B59;</div>
+          </div>
+          <div class="product-info">
+            <h3>Star Burger</h3>
+            <p class="product-desc">Steak, chorizo, cheddar, salade, tomates, frites.<br /><small>1 Sauce au
+                choix</small></p>
+            <span class="product-price">6,80 €</span>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img-wrap" data-lightbox="assets/products/gen_burger_chicken.png"
+            data-caption="Chicken Burger">
+            <img src="assets/products/gen_burger_chicken.png" alt="Chicken Burger" loading="lazy" />
+            <div class="zoom-icon">&#x2B59;</div>
+          </div>
+          <div class="product-info">
+            <h3>Chicken Burger</h3>
+            <p class="product-desc">Poulet pané, cheddar, salade, tomates, frites.<br /><small>1 Sauce au choix</small>
+            </p>
+            <span class="product-price">6,50 €</span>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img-wrap" data-lightbox="assets/products/gen_burger_geant.png"
+            data-caption="Géant Burger">
+            <img src="assets/products/gen_burger_geant.png" alt="Géant Burger" loading="lazy" />
+            <div class="zoom-icon">&#x2B59;</div>
+          </div>
+          <div class="product-info">
+            <h3>Géant Burger</h3>
+            <p class="product-desc">Steak, poulet pané, cheddar, salade, tomates, frites.<br /><small>1 Sauce au
+                choix</small></p>
+            <span class="product-price">7,50 €</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TACOS & WRAPS ========== -->
+  <section class="menu-section section-alt" id="tacos">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-title-accent"></div>
+        <h2 class="section-title">Tacos & Wraps</h2>
+        <p class="section-subtitle">Sauce fromagère, viandes grillées, galette maison</p>
+      </div>
+      <div class="product-grid product-grid-wide">
+
+        <div class="product-card product-card-lg">
+          <div class="product-img-wrap" data-lightbox="assets/products/tacos_xl.png" data-caption="Tacos Maison">
+            <img src="assets/products/tacos_xl.png" alt="Tacos" loading="lazy" />
+            <div class="zoom-icon">&#x2B59;</div>
+          </div>
+          <div class="product-info">
+            <h3>Les Tacos</h3>
+            <p class="product-desc">
+              <strong>Simple :</strong> 1 viande, sauce fromagère, frites, fromage<br />
+              <strong>Double :</strong> 2 viandes, sauce fromagère, frites, fromage<br />
+              <strong>Triple :</strong> 3 viandes, sauce fromagère, frites, fromage<br /><br />
+              <small><strong>1 Votre Viande :</strong> Escalope de Poulet, Kebab, Tenders, Cordon Bleu, Viande Hachée,
+                Chicken, Steak, Merguez.<br />
+                <strong>2 Les suppléments :</strong> Fromage & autre (Boursin, Chèvre, Mozzarella, Cheddar, Oeuf),
+                Viandes (Jambon, Chorizo, Poulet, Lardons).</small>
+            </p>
+            <div class="price-variants">
+              <div class="price-row"><span>Simple (1 viande au choix)</span><strong>10,00 €</strong></div>
+              <div class="price-row"><span>Double (2 viandes au choix)</span><strong>11,00 €</strong></div>
+              <div class="price-row"><span>Triple (3 viandes au choix)</span><strong>12,00 €</strong></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card product-card-lg">
+          <div class="product-img-wrap" data-lightbox="assets/products/wrap.png" data-caption="Wrap">
+            <img src="assets/products/wrap.png" alt="Wrap" loading="lazy" />
+            <div class="zoom-icon">&#x2B59;</div>
+          </div>
+          <div class="product-info">
+            <h3>Wrap</h3>
+            <p class="product-desc">Pain Pita ou Toasté. 2 Tenders, galette de pomme de terre, crudités, Cheddar.</p>
+            <span class="product-price">7,50 €</span>
+          </div>
+        </div>
+
+        <div class="product-card product-card-lg">
+          <div class="product-img-wrap" data-lightbox="assets/products/chicken_box.png"
+            data-caption="Chicken Box Formule">
+            <img src="assets/products/chicken_box.png" alt="Chicken Box" loading="lazy" />
+            <div class="zoom-icon">&#x2B59;</div>
+          </div>
+          <div class="product-info">
+            <h3>Chicken Box Formule</h3>
+            <p class="product-desc">10 pièces CHICKEN WINGS + 10 pièces TENDERS + 1 Coca-Cola 1,5L</p>
+            <span class="product-price product-price-featured">24,00 €</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SANDWICHS ========== -->
+  <section class="menu-section" id="sandwichs">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-title-accent"></div>
+        <h2 class="section-title">Sandwichs</h2>
+        <p class="section-subtitle">Pain maison ou tortilla / 2 Sauces au choix : Ketchup, Mayonnaise, harissa, Blanche,
+          Samourai, Algérienne, Biggy, Barbecue.</p>
+      </div>
+      <div class="product-grid">
+
+        <div class="product-card">
+          <div class="product-img-wrap" data-lightbox="assets/products/gen_sandwich_star_chicken.png"
+            data-caption="Star Chicken">
+            <img src="assets/products/gen_sandwich_star_chicken.png" alt="Star Chicken" loading="lazy" />
+            <div class="zoom-icon">&#x2B59;</div>
+          </div>
+          <div class="product-info">
+            <h3>Star Chicken</h3>
+            <p class="product-desc">Chicken, poivrons, olives, cheddar, crudités, frites</p>
+            <span class="product-price">7,50 €</span>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img-wrap" data-lightbox="assets/products/gen_sandwich_grec.png" data-caption="Grec">
+            <img src="assets/products/gen_sandwich_grec.png" alt="Grec" loading="lazy" />
+            <div class="zoom-icon">&#x2B59;</div>
+          </div>
+          <div class="product-info">
+            <h3>Grec</h3>
+            <p class="product-desc">Viande grecque, crudités, frites</p>
+            <span class="product-price">7,50 €</span>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img-wrap" data-lightbox="assets/products/gen_sandwich_americain.png"
+            data-caption="Américain">
+            <img src="assets/products/gen_sandwich_americain.png" alt="Américain" loading="lazy" />
+            <div class="zoom-icon">&#x2B59;</div>
+          </div>
+          <div class="product-info">
+            <h3>Américain</h3>
+            <p class="product-desc">2 steaks, œuf, cheddar, crudités, frites</p>
+            <span class="product-price">7,50 €</span>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img-wrap" data-lightbox="assets/products/gen_sandwich_triplex.png" data-caption="Triplex">
+            <img src="assets/products/gen_sandwich_triplex.png" alt="Triplex" loading="lazy" />
+            <div class="zoom-icon">&#x2B59;</div>
+          </div>
+          <div class="product-info">
+            <h3>Triplex</h3>
+            <p class="product-desc">3 steaks, cheddar, crudités, frites</p>
+            <span class="product-price">8,00 €</span>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img-wrap" data-lightbox="assets/products/gen_sandwich_tikka.png"
+            data-caption="Tikka Royal">
+            <img src="assets/products/gen_sandwich_tikka.png" alt="Tikka Royal" loading="lazy" />
+            <div class="zoom-icon">&#x2B59;</div>
+          </div>
+          <div class="product-info">
+            <h3>Tikka Royal</h3>
+            <p class="product-desc">Chicken tikka, galette de pommes de terre, crudités, frites</p>
+            <span class="product-price">7,50 €</span>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img-wrap" data-lightbox="assets/products/gen_sandwich_radical.png" data-caption="Radical">
+            <img src="assets/products/gen_sandwich_radical.png" alt="Radical" loading="lazy" />
+            <div class="zoom-icon">&#x2B59;</div>
+          </div>
+          <div class="product-info">
+            <h3>Radical</h3>
+            <p class="product-desc">Steak, cordon bleu, crudités, frites</p>
+            <span class="product-price">7,50 €</span>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img-wrap" data-lightbox="assets/products/gen_sandwich_supreme.png" data-caption="Suprême">
+            <img src="assets/products/gen_sandwich_supreme.png" alt="Suprême" loading="lazy" />
+            <div class="zoom-icon">&#x2B59;</div>
+          </div>
+          <div class="product-info">
+            <h3>Suprême</h3>
+            <p class="product-desc">2 steaks, boursin, cheddar, crudités, frites</p>
+            <span class="product-price">7,50 €</span>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img-wrap" data-lightbox="assets/products/gen_sandwich_royal.png" data-caption="Royal">
+            <img src="assets/products/gen_sandwich_royal.png" alt="Royal" loading="lazy" />
+            <div class="zoom-icon">&#x2B59;</div>
+          </div>
+          <div class="product-info">
+            <h3>Royal</h3>
+            <p class="product-desc">Steak, galette de pommes de terre, crudités, frites</p>
+            <span class="product-price">8,00 €</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PIZZAS ========== -->
+  <section class="menu-section section-alt" id="pizzas">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-title-accent"></div>
+        <h2 class="section-title">Pizzas</h2>
+        <p class="section-subtitle">Pâte maison, ingrédients frais — Base Tomate ou Crème Fraîche</p>
+      </div>
+
+      <div class="pizza-image-banner">
+        <div class="product-img-wrap pizza-banner-img" data-lightbox="assets/img_pizzas_ref.jpg"
+          data-caption="Nos pizzas">
+          <img src="assets/img_pizzas_ref.jpg" alt="Nos pizzas" loading="lazy" />
+          <div class="zoom-icon">&#x2B59;</div>
+        </div>
+      </div>
+
+      <div class="pizza-sizes-legend">
+
+
+
+      </div>
+
+      <h3 class="pizza-base-title">Base Tomate</h3>
+      <div class="pizza-table-wrap">
+        <table class="pizza-table">
+          <thead>
+            <tr>
+              <th>Pizza</th>
+              <th><span class="size-badge size-junior">Junior</span></th>
+              <th><span class="size-badge size-senior">Senior</span></th>
+              <th><span class="size-badge size-familiale">Familiale</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Marguerita</strong><span class="pizza-ingredients">Tomate, fromage, olives, origan</span></td>
+              <td>8,00 €</td>
+              <td>10,00 €</td>
+              <td>14,00 €</td>
+            </tr>
+            <tr>
+              <td><strong>Reine à Chef</strong><span class="pizza-ingredients">Tomate, fromage, jambon, champignons,
+                  origan</span></td>
+              <td>9,50 €</td>
+              <td>13,00 €</td>
+              <td>18,00 €</td>
+            </tr>
+            <tr>
+              <td><strong>Reine</strong><span class="pizza-ingredients">Tomate, fromage, jambon, champignons,
+                  origan</span></td>
+              <td>9,50 €</td>
+              <td>13,00 €</td>
+              <td>18,00 €</td>
+            </tr>
+            <tr>
+              <td><strong>Campione</strong><span class="pizza-ingredients">Tomate, fromage, viande hachée, champignons,
+                  œuf, origan</span></td>
+              <td>10,00 €</td>
+              <td>14,00 €</td>
+              <td>19,00 €</td>
+            </tr>
+            <tr>
+              <td><strong>Napolitaine</strong><span class="pizza-ingredients">Tomate, fromage, anchois, câpres, olives,
+                  origan</span></td>
+              <td>10,00 €</td>
+              <td>14,00 €</td>
+              <td>19,00 €</td>
+            </tr>
+            <tr>
+              <td><strong>Calzone</strong><span class="pizza-ingredients">Tomate, fromage, jambon, œuf</span></td>
+              <td>10,00 €</td>
+              <td>14,00 €</td>
+              <td>19,00 €</td>
+            </tr>
+            <tr>
+              <td><strong>Chef</strong><span class="pizza-ingredients">Tomate, fromage, thon, poivrons, olives,
+                  origan</span></td>
+              <td>10,00 €</td>
+              <td>14,00 €</td>
+              <td>19,00 €</td>
+            </tr>
+            <tr>
+              <td><strong>4 Fromages à Hollywood</strong><span class="pizza-ingredients">Tomate, fromage, chèvre,
+                  gorgonzola, parmesan, origan</span></td>
+              <td>10,00 €</td>
+              <td>14,00 €</td>
+              <td>19,00 €</td>
+            </tr>
+            <tr>
+              <td><strong>Orientale</strong><span class="pizza-ingredients">Tomate, fromage, merguez, poivrons, olives,
+                  œuf, origan</span></td>
+              <td>10,00 €</td>
+              <td>14,00 €</td>
+              <td>19,00 €</td>
+            </tr>
+            <tr>
+              <td><strong>Star Pizza</strong><span class="pizza-ingredients">Tomate, fromage, viande hachée, merguez,
+                  œuf, origan</span></td>
+              <td>10,00 €</td>
+              <td>14,00 €</td>
+              <td>19,00 €</td>
+            </tr>
+            <tr>
+              <td><strong>Chicken</strong><span class="pizza-ingredients">Tomate, fromage, poulet, poivrons, chèvre,
+                  origan</span></td>
+              <td>10,00 €</td>
+              <td>14,00 €</td>
+              <td>19,00 €</td>
+            </tr>
+            <tr>
+              <td><strong>Florentina</strong><span class="pizza-ingredients">Tomate, fromage, jambon, lardons, chorizo,
+                  origan</span></td>
+              <td>10,00 €</td>
+              <td>14,00 €</td>
+              <td>19,00 €</td>
+            </tr>
+            <tr>
+              <td><strong>Buffalo</strong><span class="pizza-ingredients">Tomate, fromage, merguez, chorizo, oignons,
+                  origan</span></td>
+              <td>10,00 €</td>
+              <td>14,00 €</td>
+              <td>19,00 €</td>
+            </tr>
+            <tr>
+              <td><strong>Pavaroti</strong><span class="pizza-ingredients">Tomate, fromage, jambon, œuf, chèvre,
+                  oignons, origan</span></td>
+              <td>10,00 €</td>
+              <td>14,00 €</td>
+              <td>19,00 €</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 class="pizza-base-title">Base Crème Fraîche</h3>
+      <div class="pizza-table-wrap">
+        <table class="pizza-table">
+          <thead>
+            <tr>
+              <th>Pizza</th>
+              <th><span class="size-badge size-junior">Junior</span></th>
+              <th><span class="size-badge size-senior">Senior</span></th>
+              <th><span class="size-badge size-familiale">Familiale</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Boursin</strong><span class="pizza-ingredients">Crème fraîche, fromage, viande hachée,
+                  boursin, œuf</span></td>
+              <td>10,50 €</td>
+              <td>14,50 €</td>
+              <td>20,00 €</td>
+            </tr>
+            <tr>
+              <td><strong>Fromagère</strong><span class="pizza-ingredients">Crème fraîche, fromage, chèvre, gorgonzola,
+                  parmesan, origan</span></td>
+              <td>10,50 €</td>
+              <td>14,50 €</td>
+              <td>20,00 €</td>
+            </tr>
+            <tr>
+              <td><strong>Suprême</strong><span class="pizza-ingredients">Crème fraîche, fromage, poulet, boursin,
+                  cordon bleu, œuf</span></td>
+              <td>10,50 €</td>
+              <td>14,50 €</td>
+              <td>20,00 €</td>
+            </tr>
+            <tr>
+              <td><strong>Parmentière</strong><span class="pizza-ingredients">Crème fraîche, fromage, viande hachée,
+                  pommes de terre, raclette</span></td>
+              <td>10,50 €</td>
+              <td>14,50 €</td>
+              <td>20,00 €</td>
+            </tr>
+            <tr>
+              <td><strong>Savoyarde</strong><span class="pizza-ingredients">Crème fraîche, jambon, fromage, reblochon,
+                  pommes de terre, oignons</span></td>
+              <td>10,50 €</td>
+              <td>14,50 €</td>
+              <td>20,00 €</td>
+            </tr>
+            <tr>
+              <td><strong>Cannibale</strong><span class="pizza-ingredients">Crème fraîche, fromage, steak haché,
+                  merguez, poulet, origan</span></td>
+              <td>10,50 €</td>
+              <td>14,50 €</td>
+              <td>20,00 €</td>
+            </tr>
+            <tr>
+              <td><strong>Raclette</strong><span class="pizza-ingredients">Crème fraîche, fromage, lardons, pommes de
+                  terre, raclette, origan</span></td>
+              <td>10,50 €</td>
+              <td>14,50 €</td>
+              <td>20,00 €</td>
+            </tr>
+            <tr>
+              <td><strong>Océane</strong><span class="pizza-ingredients">Crème fraîche, fromage, saumon fumé, œufs de
+                  lump, citron</span></td>
+              <td>10,50 €</td>
+              <td>14,50 €</td>
+              <td>20,00 €</td>
+            </tr>
+            <tr>
+              <td><strong>Melissa</strong><span class="pizza-ingredients">Crème fraîche, fromage, chèvre, miel</span>
+              </td>
+              <td>10,50 €</td>
+              <td>14,50 €</td>
+              <td>20,00 €</td>
+            </tr>
+            <tr>
+              <td><strong>Rimini</strong><span class="pizza-ingredients">Crème fraîche, fromage, poulet, pommes de
+                  terre, reblochon</span></td>
+              <td>10,50 €</td>
+              <td>14,50 €</td>
+              <td>20,00 €</td>
+            </tr>
+            <tr>
+              <td><strong>Blanche Neige</strong><span class="pizza-ingredients">Crème fraîche, fromage, chèvre,
+                  champignons, œuf</span></td>
+              <td>10,50 €</td>
+              <td>14,50 €</td>
+              <td>20,00 €</td>
+            </tr>
+            <tr>
+              <td><strong>Clarissa</strong><span class="pizza-ingredients">Crème fraîche, fromage, viande kebab,
+                  raclette</span></td>
+              <td>10,50 €</td>
+              <td>14,50 €</td>
+              <td>20,00 €</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="pizza-fatale-card">
+        <div class="pizza-fatale-header">
+          <h3>La Fatale</h3>
+          <span class="fatale-badge">Base Tomate ou Crème · 5 ingrédients au choix</span>
+        </div>
+        <div class="fatale-prices">
+          <div class="fatale-price-item"><span class="size-badge size-junior">Junior</span><strong>10,00 €</strong>
+          </div>
+          <div class="fatale-price-item"><span class="size-badge size-senior">Senior</span><strong>14,50 €</strong>
+          </div>
+          <div class="fatale-price-item"><span class="size-badge size-familiale">Familiale</span><strong>20,00
+              €</strong></div>
+        </div>
+      </div>
+
+      <div class="supplements-section">
+        <div class="ingredients-fine-print" style="font-size: 13px; color: var(--muted); margin-bottom: 16px;">
+          Préparation fromagère de haute qualité pour pizza.<br />
+          Ingrédients : anchois, olives, jambon, champignons, artichauts, poivrons, viande hachée, crème fraîche,
+          oignons, gorgonzola, chèvre, grec, crevettes, lardons, pommes de terre, chorizo, surimi, mozzarella, boursin,
+          merguez, thon, œufs de lump, citron, miel, raclette, reblochon, poulet, ananas.
+        </div>
+        <div class="supplements-header">
+          <h3>Suppléments ingrédients</h3>
+          <div class="suppl-prices-legend">
+            <span><span class="size-badge size-junior">Junior</span> +1,00 €</span>
+            <span><span class="size-badge size-senior">Senior</span> +1,50 €</span>
+            <span><span class="size-badge size-familiale">Familiale</span> +2,00 €</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Formule Foot -->
+      <div class="formule-foot-card">
+        <div class="formule-foot-icon">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" width="40" height="40">
+            <circle cx="20" cy="20" r="18" stroke="#D4A017" stroke-width="2" />
+            <polygon points="20,8 24,16 33,16 26,22 29,31 20,25 11,31 14,22 7,16 16,16" fill="#D4A017" opacity="0.3" />
+            <polygon points="20,10 23.5,17 32,17 25.5,21.5 28,30 20,24.5 12,30 14.5,21.5 8,17 16.5,17" stroke="#D4A017"
+              stroke-width="1.2" />
+          </svg>
+        </div>
+        <div class="formule-foot-content">
+          <h3>Formule Foot</h3>
+          <p>3 Pizzas Senior + Maxi Cola 1,5L — pour regarder le match entre amis</p>
+        </div>
+        <div class="formule-foot-price">33,00 €</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== SALADES ========== -->
+  <section class="menu-section" id="salades">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-title-accent"></div>
+        <h2 class="section-title">Salades</h2>
+        <p class="section-subtitle">Fraîches, généreuses, composées à la commande</p>
+      </div>
+
+      <div class="salades-banner">
+        <div class="product-img-wrap salades-banner-img" data-lightbox="assets/img_salades_ref.jpg"
+          data-caption="Nos salades">
+          <img src="assets/img_salades_ref.jpg" alt="Nos salades fraîches" loading="lazy" />
+          <div class="zoom-icon">&#x2B59;</div>
+        </div>
+      </div>
+
+      <div class="product-grid">
+
+        <div class="product-card">
+          <div class="product-img-wrap" data-lightbox="assets/products/gen_salade_mozza.png"
+            data-caption="Tomates Mozzarella">
+            <img src="assets/products/gen_salade_mozza.png" alt="Tomates Mozzarella" loading="lazy" />
+            <div class="zoom-icon">&#x2B59;</div>
+          </div>
+          <div class="product-info">
+            <h3>Tomates Mozzarella</h3>
+            <p class="product-desc">Salade verte, tomates, mozzarella, olives, basilic, huile d'olive</p>
+            <span class="product-price">7,00 €</span>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img-wrap" data-lightbox="assets/products/gen_salade_crevettes.png"
+            data-caption="Avocat Crevettes">
+            <img src="assets/products/gen_salade_crevettes.png" alt="Avocat Crevettes" loading="lazy" />
+            <div class="zoom-icon">&#x2B59;</div>
+          </div>
+          <div class="product-info">
+            <h3>Avocat Crevettes</h3>
+            <p class="product-desc">Salade verte, tomates, avocat, crevettes, sauce vinaigrette</p>
+            <span class="product-price">8,00 €</span>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img-wrap" data-lightbox="assets/products/gen_salade_chevre.png"
+            data-caption="Chèvre Chaud">
+            <img src="assets/products/gen_salade_chevre.png" alt="Chèvre Chaud" loading="lazy" />
+            <div class="zoom-icon">&#x2B59;</div>
+          </div>
+          <div class="product-info">
+            <h3>Chèvre Chaud</h3>
+            <p class="product-desc">salade verte, tomates, noix, chèvre chaud sur toasts, sauce vinaigrette</p>
+            <span class="product-price">9,00 €</span>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img-wrap" data-lightbox="assets/products/gen_salade_santa_maria.png"
+            data-caption="Santa Maria">
+            <img src="assets/products/gen_salade_santa_maria.png" alt="Santa Maria" loading="lazy" />
+            <div class="zoom-icon">&#x2B59;</div>
+          </div>
+          <div class="product-info">
+            <h3>Santa Maria</h3>
+            <p class="product-desc">Salade verte, assortiment de crudités, thon, œuf</p>
+            <span class="product-price">9,00 €</span>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img-wrap" data-lightbox="assets/products/gen_salade_trois_marches.png"
+            data-caption="Trois Marches">
+            <img src="assets/products/gen_salade_trois_marches.png" alt="Trois Marches" loading="lazy" />
+            <div class="zoom-icon">&#x2B59;</div>
+          </div>
+          <div class="product-info">
+            <h3>Trois Marches</h3>
+            <p class="product-desc">Salade verte, tomates, maïs, chèvre chaud, saumon sur toasts, olives, vinaigrette
+            </p>
+            <span class="product-price">9,50 €</span>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img-wrap" data-lightbox="assets/products/gen_salade_ile_maurice.png"
+            data-caption="Île Maurice">
+            <img src="assets/products/gen_salade_ile_maurice.png" alt="Île Maurice" loading="lazy" />
+            <div class="zoom-icon">&#x2B59;</div>
+          </div>
+          <div class="product-info">
+            <h3>Île Maurice</h3>
+            <p class="product-desc">Salade verte, tomates, surimi, crevettes, thon, champignons frais, avocat, sauce
+              vinaigrette</p>
+            <span class="product-price">10,00 €</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EXTRAS ========== -->
+  <section class="menu-section section-alt" id="extras">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-title-accent"></div>
+        <h2 class="section-title">Extras</h2>
+        <p class="section-subtitle">Panini, assiettes, Tex Mex, Tenders, Desserts et Boissons</p>
+      </div>
+
+      <!-- Panini & Assiette -->
+      <div class="extras-block">
+        <h3 class="extras-subtitle">Panini & Assiettes</h3>
+        <div class="product-grid">
+          <div class="product-card">
+            <div class="product-img-wrap" data-lightbox="assets/products/panini.png" data-caption="Panini + Frites">
+              <img src="assets/products/panini.png" alt="Panini" loading="lazy" />
+              <div class="zoom-icon">&#x2B59;</div>
+            </div>
+            <div class="product-info">
+              <h3>Panini + Frites</h3>
+              <p class="product-desc">Au choix : Thon, Merguez, Poulet, Jambon, Viande hachée, 3 Fromages</p>
+              <span class="product-price">7,00 €</span>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-img-wrap" data-lightbox="assets/products/assiette_grec_new.png"
+              data-caption="Assiette Grill">
+              <img src="assets/products/assiette_grec_new.png" alt="Assiette" loading="lazy" />
+              <div class="zoom-icon">&#x2B59;</div>
+            </div>
+            <div class="product-info">
+              <h3>Assiettes</h3>
+              <p class="product-desc">Servies avec salade mixte + frites ou potatoes. Au choix : Grec, Chicken Chika,
+                Mixte (Grec + Poulet)</p>
+              <span class="product-price">10,00 €</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tex Mex -->
+      <div class="extras-block">
+        <h3 class="extras-subtitle">Tex Mex — Chicken Wings</h3>
+        <div class="product-grid">
+          <div class="product-card product-card-lg">
+            <div class="product-img-wrap" data-lightbox="assets/products/chicken_wings_new.png"
+              data-caption="Chicken Wings Tex Mex">
+              <img src="assets/products/chicken_wings_new.png" alt="Chicken Wings" loading="lazy" />
+              <div class="zoom-icon">&#x2B59;</div>
+            </div>
+            <div class="product-info">
+              <h3>Chicken Wings</h3>
+              <p class="product-desc">Wings croustillants, sauce épicée, dip ranch maison</p>
+              <div class="price-variants">
+                <div class="price-row"><span>5 pièces</span><strong>6,50 €</strong></div>
+                <div class="price-row"><span>10 pièces</span><strong>10,00 €</strong></div>
+                <div class="price-row"><span>20 pièces</span><strong>17,00 €</strong></div>
+              </div>
+            </div>
+          </div>
+          <div class="product-card product-card-lg">
+            <div class="product-img-wrap" data-lightbox="assets/products/tenders.png" data-caption="Tenders">
+              <img src="assets/products/tenders.png" alt="Tenders" loading="lazy" />
+              <div class="zoom-icon">&#x2B59;</div>
+            </div>
+            <div class="product-info">
+              <h3>Tenders</h3>
+              <p class="product-desc">Filets de poulet panés et croustillants, sauce au choix</p>
+              <div class="price-variants">
+                <div class="price-row"><span>5 pièces</span><strong>10,00 €</strong></div>
+                <div class="price-row"><span>10 pièces</span><strong>17,00 €</strong></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Frites & Potatoes -->
+      <div class="extras-block">
+        <h3 class="extras-subtitle">Frites & Potatoes</h3>
+        <div class="sides-grid">
+          <div class="side-card">
+            <h4>Barquette Frites</h4>
+            <div class="price-row"><span>Petite</span><strong>4,00 €</strong></div>
+            <div class="price-row"><span>Grande</span><strong>5,00 €</strong></div>
+          </div>
+          <div class="side-card">
+            <h4>Barquette Potatoes</h4>
+            <div class="price-row"><span>Petite</span><strong>5,00 €</strong></div>
+            <div class="price-row"><span>Grande</span><strong>6,00 €</strong></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Desserts -->
+      <div class="extras-block">
+        <h3 class="extras-subtitle">Desserts</h3>
+        <div class="product-grid">
+          <div class="product-card product-card-lg">
+            <div class="product-img-wrap" data-lightbox="assets/products/desserts_new.png" data-caption="Nos desserts">
+              <img src="assets/products/desserts_new.png" alt="Desserts" loading="lazy" />
+              <div class="zoom-icon">&#x2B59;</div>
+            </div>
+            <div class="product-info">
+              <div class="desserts-list">
+                <div class="price-row"><span>Tiramisu</span><strong>2,50 €</strong></div>
+                <div class="price-row"><span>Brownie</span><strong>2,50 €</strong></div>
+                <div class="price-row"><span>Tarte aux pommes</span><strong>2,50 €</strong></div>
+                <div class="price-row"><span>Tarte au Daim</span><strong>3,00 €</strong></div>
+                <div class="price-row">
+                  <span>
+                    Häagen-Dazs 100 ML<br />
+                    <small style="font-size:11px;opacity:0.7;">Demandez nos parfums disponibles</small>
+                  </span>
+                  <strong>3,50 €</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Boissons -->
+          <div class="product-card product-card-lg">
+            <div class="product-img-wrap" data-lightbox="assets/products/boisson_coca.png" data-caption="Boissons">
+              <img src="assets/products/boisson_coca.png" alt="Boissons" loading="lazy" />
+              <div class="zoom-icon">&#x2B59;</div>
+            </div>
+            <div class="product-info">
+              <h3>Boissons</h3>
+              <div class="drinks-list">
+                <div class="price-row"><span>Coca-Cola / Light / Zéro 33cl</span><strong>1,50 €</strong></div>
+                <div class="price-row"><span>Orangina / Fanta 33cl</span><strong>1,50 €</strong></div>
+                <div class="price-row"><span>Oasis Tropical 33cl</span><strong>1,50 €</strong></div>
+                <div class="price-row"><span>Eau de source 33cl</span><strong>1,50 €</strong></div>
+                <div class="price-row"><span>Freeze 27,5cl</span><strong>2,00 €</strong></div>
+                <div class="price-row"><span>Maxi Fanta / Orangina 1,5L</span><strong>3,00 €</strong></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="section-header" style="text-align:center; margin-bottom: 48px;">
+        <div class="section-title-accent" style="margin: 0 auto 12px;"></div>
+        <h2 class="section-title">Nous trouver &amp; Nous contacter</h2>
+        <p class="section-subtitle">Commandes, renseignements — on est là 7j/7</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+
+          <!-- Adresse -->
+          <div class="contact-address-card">
+            <div class="contact-address-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="28" height="28">
+                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" />
+                <circle cx="12" cy="9" r="2.5" />
+              </svg>
+            </div>
+            <div>
+              <p class="contact-label">Adresse</p>
+              <address class="contact-address" style="font-style:normal;">
+                <strong>Star Pizza</strong><br />
+                1 Rue du Marché<br />
+                28700 Auneau-Bleury-Saint-Symphorien<br />
+                France
+              </address>
+              <a href="https://maps.google.com/?q=1+Rue+du+Marché+28700+Auneau-Bleury-Saint-Symphorien" target="_blank"
+                rel="noopener" class="map-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="14" height="14">
+                  <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6" />
+                  <polyline points="15 3 21 3 21 9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                </svg>
+                Voir sur Google Maps
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-items">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="20" height="20">
+                  <path
+                    d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.02 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z" />
+                </svg>
+              </div>
+              <div>
+                <p class="contact-label">Téléphone</p>
+                <a href="tel:0237900000" class="contact-value">02 37 90 00 00</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="20" height="20">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+              </div>
+              <div>
+                <p class="contact-label">E-mail</p>
+                <a href="mailto:contact@starpizza28.fr" class="contact-value">contact@starpizza28.fr</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="20" height="20">
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M12 6v6l4 2" />
+                </svg>
+              </div>
+              <div>
+                <p class="contact-label">Horaires</p>
+                <p class="contact-value">Lun – Dim · 11h00 – 23h00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-map-col">
+          <div class="contact-cta-box" style="margin-bottom: 20px;">
+            <p class="cta-box-text">Passez votre commande directement par téléphone ou venez nous voir sur place.</p>
+            <a href="tel:0237900000" class="btn btn-primary btn-lg">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+                <path
+                  d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.02 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z" />
+              </svg>
+              Appeler maintenant
+            </a>
+            <a href="https://maps.google.com/?q=1+Rue+du+Marché+28700+Auneau-Bleury-Saint-Symphorien" target="_blank"
+              rel="noopener" class="btn btn-outline"
+              style="margin-top: 12px; display:flex; align-items:center; gap:8px; justify-content:center;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" />
+                <circle cx="12" cy="9" r="2.5" />
+              </svg>
+              Itinéraire GPS
+            </a>
+          </div>
+          <div class="google-map-embed">
+            <iframe title="Star Pizza Montrouge — Localisation Google Maps"
+              src="https://maps.google.com/maps?q=1+Rue+du+Marché+28700+Auneau-Bleury-Saint-Symphorien&output=embed&z=15"
+              width="100%" height="260" style="border:0; border-radius: 16px;" allowfullscreen loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== AGENCE WEB ========== -->
+  <section class="agency-section" id="agence">
+    <div class="container">
+      <div class="agency-inner">
+        <div class="agency-badge">✦ Site réalisé par</div>
+        <div class="agency-grid">
+          <div class="agency-brand">
+            <div class="agency-logo-wrap">
+              <img src="assets/2rservices.jpg" alt="2RSERVICES" class="agency-logo-img" />
+            </div>
+            <p class="agency-tagline">Entreprise spécialisée dans l'informatique Création de sites vitrines et Montage
+              de PC &amp; e-commerce pour les
+              restaurateurs et TPE/PME.</p>
+          </div>
+          <div class="agency-contacts">
+            <div class="agency-contact-item">
+              <span class="agency-contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16">
+                  <path
+                    d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.02 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z" />
+                </svg>
+              </span>
+              <a href="tel:+33621724113" class="agency-contact-val">06 21 72 41 13</a>
+            </div>
+            <div class="agency-contact-item">
+              <span class="agency-contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+              </span>
+              <a href="mailto:2rservices.contact@gmail.com" class="agency-contact-val">2rservices.contact@gmail.com</a>
+            </div>
+            <div class="agency-contact-item">
+              <span class="agency-contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16">
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" />
+                  <circle cx="12" cy="9" r="2.5" />
+                </svg>
+              </span>
+              <span class="agency-contact-val">3 rue du presbytère, 28700 Levainville</span>
+            </div>
+            <div class="agency-contact-item">
+              <span class="agency-contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16">
+                  <circle cx="12" cy="12" r="10" />
+                  <line x1="2" y1="12" x2="22" y2="12" />
+                  <path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z" />
+                </svg>
+              </span>
+              <a href="https://www.2rservices.fr" target="_blank" rel="noopener"
+                class="agency-contact-val">www.2rservices.fr</a>
+            </div>
+          </div>
+          <div class="agency-cta-wrap">
+            <p class="agency-cta-text">Vous souhaitez un site comme celui-ci pour votre restaurant ? ou pour n'importe
+              quelle autre activité ? contactez moi via le formulaire ci-dessous ou par téléphone ou par mail.</p>
+            <a href="mailto:2rservices.contact@gmail.com" class="btn btn-agency">Demander un devis gratuit</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <img src="assets/logo_new.jpg" alt="Star Pizza Auneau" class="footer-logo" />
+          <p>Pizzeria · Tacos · Grill · Salade</p>
+          <p class="footer-address">1 Rue du Marché · 28700 Auneau-Bleury-Saint-Symphorien</p>
+        </div>
+        <nav class="footer-nav">
+          <a href="#burgers">Burgers</a>
+          <a href="#tacos">Tacos</a>
+          <a href="#pizzas">Pizzas</a>
+          <a href="#salades">Salades</a>
+          <a href="#extras">Extras</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <p class="footer-copy">&copy; 2026 Star Pizza Auneau — Tous droits réservés<br /><small>Site réalisé par <a
+              href="mailto:2rservices.contact@gmail.com"
+              style="color:var(--gold); text-decoration:none;">2RSERVICES</a></small></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script data-pplx-inline-edit>
+    (function () {
+      if (window === window.top) return;
+      function inlineAll(orig, clone) {
+        if (orig.nodeType !== 1) return;
+        try {
+          var cs = getComputedStyle(orig);
+          var t = '';
+          for (var i = 0; i < cs.length; i++) { t += cs[i] + ':' + cs.getPropertyValue(cs[i]) + ';'; }
+          clone.style.cssText = t;
+        } catch (e) { }
+        var oc = orig.children, cc = clone.children;
+        for (var j = 0; j < oc.length && j < cc.length; j++) { inlineAll(oc[j], cc[j]); }
+      }
+      function stripExternal(clone) {
+        var imgs = clone.querySelectorAll('img');
+        for (var i = 0; i < imgs.length; i++) {
+          var s = imgs[i].getAttribute('src');
+          if (s && !s.startsWith('data:')) imgs[i].removeAttribute('src');
+        }
+        var all = clone.querySelectorAll('*');
+        for (var i = 0; i < all.length; i++) {
+          var st = all[i].style.cssText;
+          if (st && st.indexOf('url(') >= 0) {
+            all[i].style.cssText = st.replace(/url\(["']?(?!data:)[^)"']*["']?\)/gi, 'none');
+          }
+        }
+      }
+      var scrollRaf = 0;
+      function emitScroll() {
+        scrollRaf = 0;
+        var x = window.scrollX || window.pageXOffset || 0;
+        var y = window.scrollY || window.pageYOffset || 0;
+        window.parent.postMessage({ type: 'INLINE_EDIT_SCROLL', scrollX: x, scrollY: y }, '*');
+      }
+      window.addEventListener('scroll', function () {
+        if (scrollRaf) return;
+        scrollRaf = requestAnimationFrame(emitScroll);
+      }, { passive: true, capture: true });
+      emitScroll();
+      window.addEventListener('message', function (e) {
+        if (!e.data || e.data.type !== 'INLINE_EDIT_CAPTURE_REQUEST') return;
+        var scrollX = window.scrollX || window.pageXOffset || 0;
+        var scrollY = window.scrollY || window.pageYOffset || 0;
+        var w = window.innerWidth, h = window.innerHeight;
+        try {
+          var clone = document.documentElement.cloneNode(true);
+          var rm = clone.querySelectorAll('script,link[rel="stylesheet"],style');
+          for (var i = 0; i < rm.length; i++) { rm[i].remove(); }
+          inlineAll(document.documentElement, clone);
+          stripExternal(clone);
+          var html = new XMLSerializer().serializeToString(clone);
+          var svg = '<svg xmlns="http://www.w3.org/2000/svg" width="' + w + '" height="' + h + '">'
+            + '<foreignObject width="100%" height="100%">'
+            + '<div xmlns="http://www.w3.org/1999/xhtml" style="width:' + w + 'px;height:' + h + 'px;overflow:hidden">'
+            + '<div style="transform:translate(-' + scrollX + 'px,-' + scrollY + 'px);transform-origin:top left">'
+            + html + '</div></div></foreignObject></svg>';
+          var svgUrl = 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svg);
+          var img = new Image();
+          img.onload = function () {
+            var c = document.createElement('canvas'); c.width = w; c.height = h;
+            c.getContext('2d').drawImage(img, 0, 0);
+            window.parent.postMessage({ type: 'INLINE_EDIT_SCREENSHOT_RESULT', dataUrl: c.toDataURL('image/png'), scrollX: scrollX, scrollY: scrollY }, '*');
+          };
+          img.onerror = function () {
+            window.parent.postMessage({ type: 'INLINE_EDIT_SCREENSHOT_RESULT', dataUrl: null, scrollX: scrollX, scrollY: scrollY }, '*');
+          };
+          img.src = svgUrl;
+        } catch (err) {
+          window.parent.postMessage({ type: 'INLINE_EDIT_SCREENSHOT_RESULT', dataUrl: null, scrollX: scrollX, scrollY: scrollY }, '*');
+        }
+      });
+    })();
+  </script>
+</body>
+
+</html>
