@@ -96,6 +96,7 @@
     <div class="lightbox-content">
       <img src="" alt="" id="lightboxImg" />
       <p class="lightbox-caption" id="lightboxCaption"></p>
+      <p class="lightbox-disclaimer" style="color: rgba(255,255,255,0.7); font-size: 12px; margin-top: -8px; text-align: center; font-style: italic;">* Photo d'illustration non contractuelle. Le produit servi ne correspond pas exactement à cette image.</p>
     </div>
   </div>
 
@@ -141,6 +142,22 @@
       Défiler
     </div>
   </section>
+
+  <!-- ========== AVERTISSEMENT PHOTOS ========== -->
+  <div style="background: var(--bg); padding: 20px 0; padding-top: 40px; text-align: center; border-bottom: 1px solid var(--border-dim);">
+    <div class="container">
+      <div style="display: inline-flex; align-items: center; gap: 12px; background: rgba(212,160,23,0.06); border: 1px solid rgba(212,160,23,0.25); border-radius: 12px; padding: 16px 24px; max-width: 800px; margin: 0 auto; box-shadow: 0 4px 20px rgba(0,0,0,0.3);">
+        <svg viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2" width="24" height="24" style="flex-shrink: 0;">
+          <circle cx="12" cy="12" r="10"></circle>
+          <line x1="12" y1="8" x2="12" y2="12"></line>
+          <line x1="12" y1="16" x2="12.01" y2="16"></line>
+        </svg>
+        <p style="color: var(--text); font-size: 14px; margin: 0; text-align: left; line-height: 1.5;">
+          <strong style="color: var(--gold);">Avertissement photos :</strong> Toutes les photographies de plats présentées sur ce site sont des <strong style="color: var(--white);">illustrations non contractuelles</strong>. Elles sont utilisées à titre indicatif et ne correspondent pas exactement aux plats que les clients recevront.
+        </p>
+      </div>
+    </div>
+  </div>
 
   <!-- ========== BURGERS ========== -->
   <section class="menu-section" id="burgers">
@@ -1022,31 +1039,15 @@
               </div>
               <div>
                 <p class="contact-label">Horaires</p>
-                <p class="contact-value">mercredi
-11:30–14:00
-18:30–22:30
-
-jeudi
-11:30–14:00
-18:30–22:30
-
-vendredi
-11:30–14:00
-18:30–22:30
-
-samedi
-11:30–14:00
-18:30–22:30
-
-dimanche
-18:30–22:30
-
-lundi
-Fermé
-
-mardi
-11:30–14:00
-18:30–22:30</p>
+                <ul class="contact-value" style="list-style: none; padding: 0; margin: 0; font-size: 14px; line-height: 1.8; width: 100%; min-width: 200px;">
+                  <li style="display: flex; justify-content: space-between;"><span>Lundi</span> <span style="color: var(--muted);">Fermé</span></li>
+                  <li style="display: flex; justify-content: space-between;"><span>Mardi</span> <span>11:30–14:00 <span style="color:var(--gold); margin:0 4px;">|</span> 18:30–22:30</span></li>
+                  <li style="display: flex; justify-content: space-between;"><span>Mercredi</span> <span>11:30–14:00 <span style="color:var(--gold); margin:0 4px;">|</span> 18:30–22:30</span></li>
+                  <li style="display: flex; justify-content: space-between;"><span>Jeudi</span> <span>11:30–14:00 <span style="color:var(--gold); margin:0 4px;">|</span> 18:30–22:30</span></li>
+                  <li style="display: flex; justify-content: space-between;"><span>Vendredi</span> <span>11:30–14:00 <span style="color:var(--gold); margin:0 4px;">|</span> 18:30–22:30</span></li>
+                  <li style="display: flex; justify-content: space-between;"><span>Samedi</span> <span>11:30–14:00 <span style="color:var(--gold); margin:0 4px;">|</span> 18:30–22:30</span></li>
+                  <li style="display: flex; justify-content: space-between;"><span>Dimanche</span> <span>18:30–22:30</span></li>
+                </ul>
               </div>
             </div>
           </div>
@@ -1168,6 +1169,11 @@ mardi
         <p class="footer-copy">&copy; 2026 Star Pizza Auneau — Tous droits réservés<br /><small>Site réalisé par <a
               href="mailto:2rservices.contact@gmail.com"
               style="color:var(--gold); text-decoration:none;">2RSERVICES</a></small></p>
+      </div>
+      <div style="border-top: 1px solid var(--border-dim); margin-top: 30px; padding-top: 20px; text-align: center;">
+        <p style="font-size: 12px; color: var(--muted); opacity: 0.8; margin: 0; line-height: 1.5;">
+          * <strong>Mentions légales sur les images :</strong> Toutes les photos et images figurant sur l'ensemble de ce site web sont des suggestions de présentation. Elles sont <strong>non contractuelles</strong> et ne représentent pas les plats réels préparés et servis à notre clientèle.
+        </p>
       </div>
     </div>
   </footer>
